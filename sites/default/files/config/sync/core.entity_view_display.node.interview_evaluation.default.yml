@@ -1,0 +1,125 @@
+uuid: 9c956d53-6c78-4528-b4b9-b366f3b67faf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.interview_evaluation.field_any_other_information_if_y
+    - field.field.node.interview_evaluation.field_application_sequence_numbe
+    - field.field.node.interview_evaluation.field_candidate_name
+    - field.field.node.interview_evaluation.field_name_panel_members_who_are
+    - field.field.node.interview_evaluation.field_panel_number
+    - field.field.node.interview_evaluation.field_suggest_a_r2_panel_for_the
+    - field.field.node.interview_evaluation.field_total_score_for_the_candid
+    - field.field.node.interview_evaluation.field_type_of_interview
+    - field.field.node.interview_evaluation.field_what_base_score_would_you
+    - field.field.node.interview_evaluation.field_what_variable_score_would
+    - field.field.node.interview_evaluation.field_what_was_your_overall_impr
+    - field.field.node.interview_evaluation.field_why_are_you_awarding_this
+    - node.type.interview_evaluation
+  module:
+    - options
+    - user
+id: node.interview_evaluation.default
+targetEntityType: node
+bundle: interview_evaluation
+mode: default
+content:
+  field_any_other_information_if_y:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_application_sequence_numbe:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_candidate_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_name_panel_members_who_are:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_panel_number:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_suggest_a_r2_panel_for_the:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_total_score_for_the_candid:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_type_of_interview:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_what_base_score_would_you:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_what_variable_score_would:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_what_was_your_overall_impr:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_why_are_you_awarding_this:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

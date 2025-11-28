@@ -1,0 +1,21 @@
+uuid: 745b17e5-9410-40dc-8dac-23631457dbc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_experimental_skill
+    - node.type.referee
+  module:
+    - options
+id: node.referee.field_experimental_skill
+field_name: field_experimental_skill
+entity_type: node
+bundle: referee
+label: 'Communication skills – written'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

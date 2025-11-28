@@ -1,0 +1,25 @@
+uuid: d1821815-c2d8-47d8-9170-f8da35314797
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - admissions_barrio
+_core:
+  default_config_hash: nuW1Z5MdvzbCCEZ9RQojaEWB6Zni32zTq-v5OWbS2sc
+id: admissions_barrio_branding
+theme: admissions_barrio
+region: top_header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

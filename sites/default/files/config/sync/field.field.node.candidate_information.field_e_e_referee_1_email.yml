@@ -1,0 +1,19 @@
+uuid: 82c6a95f-88f5-4260-9e7e-0659435e34d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_e_referee_1_email
+    - node.type.candidate_information
+id: node.candidate_information.field_e_e_referee_1_email
+field_name: field_e_e_referee_1_email
+entity_type: node
+bundle: candidate_information
+label: 'Referee 1 Email :'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

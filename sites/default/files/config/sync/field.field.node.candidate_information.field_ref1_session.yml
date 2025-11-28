@@ -1,0 +1,19 @@
+uuid: dc55f357-df5a-488c-be7b-535e1601c072
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ref1_session
+    - node.type.candidate_information
+id: node.candidate_information.field_ref1_session
+field_name: field_ref1_session
+entity_type: node
+bundle: candidate_information
+label: 'Ref1 Session'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

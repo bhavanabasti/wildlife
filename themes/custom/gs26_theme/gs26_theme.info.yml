@@ -1,0 +1,14 @@
+name: GS26 Custom Theme
+type: theme
+description: Custom Bootstrap 5 theme for GS26.
+core_version_requirement: ^10
+base theme: bootstrap_barrio
+
+libraries:
+  - gs26_theme/global
+
+regions:
+  header: Header
+  content: Content
+  sidebar: Sidebar
+  footer: Footer

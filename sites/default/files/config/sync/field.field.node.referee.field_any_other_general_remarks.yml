@@ -1,0 +1,19 @@
+uuid: 1ac0440c-ec0d-4bd8-a522-617c558b6203
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_any_other_general_remarks
+    - node.type.referee
+id: node.referee.field_any_other_general_remarks
+field_name: field_any_other_general_remarks
+entity_type: node
+bundle: referee
+label: 'Any other general remarks you wish to make. Please highlight any special skill this candidate possesses, and also any areas wher'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

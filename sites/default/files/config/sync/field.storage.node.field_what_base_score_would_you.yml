@@ -1,0 +1,39 @@
+uuid: 9b050437-9146-43c3-859f-ab7b206c6abf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_what_base_score_would_you
+field_name: field_what_base_score_would_you
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '85_comparable_to_our_best_phd_students_capable_of_exceptional_research_85_comparable_to_our_best_phd_students_capable_of_ex|85: Comparable to our best PhD students, capable of exceptional research.'
+      label: '85: Comparable to our best PhD students, capable of ex'
+    -
+      value: '75_comparable_to_median_phd_students_capable_of_good_research_75_comparable_to_median_phd_students_capable_of_good_research|75: Comparable to median PhD students, capable of good research.'
+      label: '75: Comparable to median PhD students, capable of good research'
+    -
+      value: '65_reliable_phd_student_capable_of_reasonable_research_65_reliable_phd_student_capable_of_reasonable_research|65: Reliable PhD student, capable of reasonable research.'
+      label: '65: Reliable PhD student, capable of reasonable research.'
+    -
+      value: '50_would_struggle_in_a_phd_programme_requiring_constant_supervision_50_would_struggle_in_a_phd_programme_requiring_constant|50: Would struggle in a PhD programme, requiring constant supervision.'
+      label: '50: Would struggle in a PhD programme, requiring constant'
+    -
+      value: '30_would_be_out_of_their_depth_in_the_phd_programme_30_would_be_out_of_their_depth_in_the_phd_programme|30: Would be out of their depth in the PhD programme.'
+      label: '30: Would be out of their depth in the PhD programme.'
+    -
+      value: '10_not_a_candidate_for_the_phd_programme_10_not_a_candidate_for_the_phd_programme|10: Not a candidate for the PhD programme.'
+      label: '10: Not a candidate for the PhD programme.'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

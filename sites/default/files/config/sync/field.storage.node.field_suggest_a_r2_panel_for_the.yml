@@ -1,0 +1,39 @@
+uuid: 2db70a62-1ac4-441d-92a8-9dbd7512d04b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_suggest_a_r2_panel_for_the
+field_name: field_suggest_a_r2_panel_for_the
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'biochemistry_and_structural_biology_br_biochemistry_and_structural_biology|Biochemistry and Structural Biology<br>'
+      label: 'Biochemistry and Structural Biology'
+    -
+      value: 'bioinformatics_and_computational_biology_br_bioinformatics_and_computational_biology|Bioinformatics and Computational Biology<br>'
+      label: 'Bioinformatics and Computational Biology'
+    -
+      value: 'ecology_and_evolution_br_ecology_and_evolution|Ecology and Evolution<br>'
+      label: 'Ecology and Evolution'
+    -
+      value: 'molecular_and_cell_biology_br_molecular_and_cell_biology|Molecular and Cell Biology<br>'
+      label: 'Molecular and Cell Biology'
+    -
+      value: neurobiology_br_neurobiolog|Neurobiology<br>
+      label: Neurobiology
+    -
+      value: theory_br_theory|Theory<br>
+      label: Theory
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 5c5eaa75-c14a-40ff-801d-81f6b6d89411
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_are_you_recommending_more
+field_name: field_are_you_recommending_more
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

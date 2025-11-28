@@ -1,0 +1,33 @@
+uuid: ac0178ec-6d58-4594-b026-5d476611eaaa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_strongly_recommend
+field_name: field_strongly_recommend
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'very_strongly_very_strongly|Very strongly'
+      label: 'Very strongly'
+    -
+      value: strongly_strongly|Strongly
+      label: Strongly
+    -
+      value: moderately_moderately|Moderately
+      label: Moderately
+    -
+      value: 'with_caveats_with_caveats|With caveats'
+      label: 'With caveats'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

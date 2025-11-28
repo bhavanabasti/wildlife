@@ -1,0 +1,30 @@
+uuid: 607876a9-7ee6-44a4-b901-8b665b065532
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.interview_questions.field_app_seq_no
+    - field.field.node.interview_questions.field_e_exam_candidate_name
+    - field.field.node.interview_questions.field_faculty_name
+    - field.field.node.interview_questions.field_interview_type
+    - field.field.node.interview_questions.field_what_did_you_ask_the_candi
+    - node.type.interview_questions
+  module:
+    - user
+id: node.interview_questions.teaser
+targetEntityType: node
+bundle: interview_questions
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_app_seq_no: true
+  field_e_exam_candidate_name: true
+  field_faculty_name: true
+  field_interview_type: true
+  field_what_did_you_ask_the_candi: true

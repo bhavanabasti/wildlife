@@ -1,0 +1,19 @@
+uuid: 130ac6d1-83c3-4d3e-9bb3-b9bdd79110e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_candidate_how_long
+    - node.type.referee
+id: node.referee.field_candidate_how_long
+field_name: field_candidate_how_long
+entity_type: node
+bundle: referee
+label: 'How long and in what capacity have you known the candidate'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

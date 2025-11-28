@@ -1,0 +1,240 @@
+uuid: 341c95c7-9203-456a-9103-461619ef66c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.referee.field_ability_to_work_in_a_team
+    - field.field.node.referee.field_additional_comments
+    - field.field.node.referee.field_any_other_general_remarks
+    - field.field.node.referee.field_are_you_recommending_more
+    - field.field.node.referee.field_basic_knowledge
+    - field.field.node.referee.field_candidate_how_long
+    - field.field.node.referee.field_candidate_info_ref
+    - field.field.node.referee.field_collaboration_ability
+    - field.field.node.referee.field_contact_address
+    - field.field.node.referee.field_do_you_feel_that_his_her_g
+    - field.field.node.referee.field_experimental_skill
+    - field.field.node.referee.field_former_students
+    - field.field.node.referee.field_how_would_you_place_the_ap
+    - field.field.node.referee.field_if_not_please_comment
+    - field.field.node.referee.field_in_summary_how_do_you_reco
+    - field.field.node.referee.field_independence
+    - field.field.node.referee.field_mathematical_skill
+    - field.field.node.referee.field_maturity
+    - field.field.node.referee.field_oral_communication
+    - field.field.node.referee.field_overall_rating
+    - field.field.node.referee.field_recomendation
+    - field.field.node.referee.field_referee_report
+    - field.field.node.referee.field_specialized_knowledge
+    - field.field.node.referee.field_strongly_recommend
+    - field.field.node.referee.field_supervise
+    - field.field.node.referee.field_title_position
+    - field.field.node.referee.field_written_communication
+    - node.type.referee
+  module:
+    - file
+    - options
+    - user
+id: node.referee.default
+targetEntityType: node
+bundle: referee
+mode: default
+content:
+  field_ability_to_work_in_a_team:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_additional_comments:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 128
+    region: content
+  field_any_other_general_remarks:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_are_you_recommending_more:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_basic_knowledge:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_candidate_how_long:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 117
+    region: content
+  field_candidate_info_ref:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_collaboration_ability:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 126
+    region: content
+  field_contact_address:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_do_you_feel_that_his_her_g:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  field_experimental_skill:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_former_students:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 119
+    region: content
+  field_how_would_you_place_the_ap:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 118
+    region: content
+  field_if_not_please_comment:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 120
+    region: content
+  field_in_summary_how_do_you_reco:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 122
+    region: content
+  field_independence:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 121
+    region: content
+  field_mathematical_skill:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_maturity:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_oral_communication:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 124
+    region: content
+  field_overall_rating:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_recomendation:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_referee_report:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 127
+    region: content
+  field_specialized_knowledge:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_strongly_recommend:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 123
+    region: content
+  field_supervise:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_title_position:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 125
+    region: content
+  field_written_communication:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 129
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

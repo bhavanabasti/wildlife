@@ -1,0 +1,25 @@
+uuid: 93e3b7a7-eb7d-4a32-ae11-0b98eda8fc84
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ee1d1eac-ba2e-44cb-a055-122f42070cbd'
+  module:
+    - block_content
+  theme:
+    - bootstrap5
+id: bootstrap5_admissionsfooter
+theme: bootstrap5
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:ee1d1eac-ba2e-44cb-a055-122f42070cbd'
+settings:
+  id: 'block_content:ee1d1eac-ba2e-44cb-a055-122f42070cbd'
+  label: 'Admissions Footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

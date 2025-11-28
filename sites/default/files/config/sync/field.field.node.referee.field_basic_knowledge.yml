@@ -1,0 +1,21 @@
+uuid: 9000e5da-dd0c-4989-9c5e-548be0866b8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_basic_knowledge
+    - node.type.referee
+  module:
+    - options
+id: node.referee.field_basic_knowledge
+field_name: field_basic_knowledge
+entity_type: node
+bundle: referee
+label: 'Academic capability'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

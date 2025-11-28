@@ -1,0 +1,265 @@
+{{ attach_library('bootstrap_barrio/node') }}
+
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+<article{{ attributes.addClass(classes) }}>
+    <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+        <div class="table-responsive">
+            <table style="width:100%">
+                <tr style="width:100%">
+                    <td style="width:50%">{{ node.field_title_position.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_title_position.0.value }}</td>
+                </tr>
+				<tr style="width:100%">
+                    <td style="width:50%">{{ node.field_candidate_how_long.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_candidate_how_long.0.value }}</td>
+                </tr>
+                <tr style="width:100%">
+                    <td style="width:50%">{{ node.field_how_would_you_place_the_ap.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_how_would_you_place_the_ap.0.value }}</td>
+                </tr>
+                <tr style="width:100%">
+                    <td style="width:50%">{{ node.field_field_4_are_you_recommendi.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_field_4_are_you_recommendi.0.value }}</td>
+                </tr>
+                <tr style="width:100%">
+                    <td style="width:50%">{{ node.field_4_are_you_recommending_mor.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_4_are_you_recommending_mor.0.value }}</td>
+                </tr>
+                <tr style="width:100%">
+                    <td style="width:50%">{{ node.field_do_you_feel_that_his_her_g.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_do_you_feel_that_his_her_g.0.value }}</br>{{node.field_if_not_please_comment_.0.value}}</td>
+                </tr>
+				<tr style="width:100%">
+                    <td style="width:50%">{{ node.field_any_other_general_remarks_.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_any_other_general_remarks_.0.value }}</td>
+                </tr>
+
+				
+                {# <tr style="width:100%">
+                    <td style="width:50%">{{ node.field_contact_address.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_contact_address.0.value }}</td>
+                </tr> #}
+                {# 
+                <tr style="width:100%">
+                    <td style="width:50%">{{ node.field_recommendation.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_recommendation.0.value }}</td>
+                </tr>
+                <tr style="width:100%">
+                    <td style="width:50%">{{ node.field_former_students.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_former_students.0.value }}</td>
+                </tr>
+                <tr style="width:100%">
+                    <td style="width:50%">{{ node.field_supervise.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_supervise.0.value }}</td>
+                </tr>
+                <tr style="width:100%">
+                    <td style="width:50%">{{ node.field_additional_comments.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_additional_comments.0.value }}</td>
+                </tr>
+                <tr style="width:100%">
+                    <td style="width:50%">{{ node.field_strongly_recommend.fieldDefinition.label }}</td>
+                    <td style="width:50%">{{ node.field_strongly_recommend.0.value }}</td>
+                </tr>
+				 #}
+            </table>
+        </div>
+        <div class="table-responsive">
+            <table>
+                <tr>
+                    <td>
+                        <b>{{ node.field_overall_rating.fieldDefinition.label }}</b><br>
+                        {% set rating = node.field_overall_rating.value %}
+                        <div class="star-rating">
+                            {% for i in 1..5 %}
+                                {% if i <= {
+                                    'Poor': 1,
+                                    'Average': 2,
+                                    'Good': 3,
+                                    'Very Good': 4,
+                                    'Excellent': 5,
+                                }[rating] ?? 0 %}
+                                    <span style="color:#f5bd1f;font-size:150%;">&starf;</span>
+                                {% else %}
+                                    <span style="font-size:150%;">&star;</span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </td>
+                    <td>
+                        <b>{{ node.field_basic_knowledge.fieldDefinition.label }}</b><br>
+                        {% set rating = node.field_basic_knowledge.value %}
+                        <div class="star-rating">
+                            {% for i in 1..5 %}
+                                {% if i <= {
+                                    'Poor': 1,
+                                    'Average': 2,
+                                    'Good': 3,
+                                    'Very Good': 4,
+                                    'Excellent': 5,
+                                }[rating] ?? 0 %}
+                                    <span style="color:#f5bd1f;font-size:150%;">&starf;</span>
+                                {% else %}
+                                    <span style="font-size:150%;">&star;</span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </td>
+                    <td>
+                        <b>{{ node.field_collaboration_ability.fieldDefinition.label }}</b><br>
+                        {% set rating = node.field_collaboration_ability.value %}
+                        <div class="star-rating">
+                            {% for i in 1..5 %}
+                                {% if i <= {
+                                    'Poor': 1,
+                                    'Average': 2,
+                                    'Good': 3,
+                                    'Very Good': 4,
+                                    'Excellent': 5,
+                                }[rating] ?? 0 %}
+                                    <span style="color:#f5bd1f;font-size:150%;">&starf;</span>
+                                {% else %}
+                                    <span style="font-size:150%;">&star;</span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>{{ node.field_experimental_skill.fieldDefinition.label }}</b><br>
+                        {% set rating = node.field_experimental_skill.value %}
+                        <div class="star-rating">
+                            {% for i in 1..5 %}
+                                {% if i <= {
+                                    'Poor': 1,
+                                    'Average': 2,
+                                    'Good': 3,
+                                    'Very Good': 4,
+                                    'Excellent': 5,
+                                }[rating] ?? 0 %}
+                                    <span style="color:#f5bd1f;font-size:150%;">&starf;</span>
+                                {% else %}
+                                    <span style="font-size:150%;">&star;</span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </td>
+                    <td>
+                        <b>{{ node.field_mathematical_skill.fieldDefinition.label }}</b><br>
+                        {% set rating = node.field_mathematical_skill.value %}
+                        <div class="star-rating">
+                            {% for i in 1..5 %}
+                                {% if i <= {
+                                    'Poor': 1,
+                                    'Average': 2,
+                                    'Good': 3,
+                                    'Very Good': 4,
+                                    'Excellent': 5,
+                                }[rating] ?? 0 %}
+                                    <span style="color:#f5bd1f;font-size:150%;">&starf;</span>
+                                {% else %}
+                                    <span style="font-size:150%;">&star;</span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>{{ node.field_maturity.fieldDefinition.label }}</b><br>
+                        {% set rating = node.field_maturity.value %}
+                        <div class="star-rating">
+                            {% for i in 1..5 %}
+                                {% if i <= {
+                                    'Poor': 1,
+                                    'Average': 2,
+                                    'Good': 3,
+                                    'Very Good': 4,
+                                    'Excellent': 5,
+                                }[rating] ?? 0 %}
+                                    <span style="color:#f5bd1f;font-size:150%;">&starf;</span>
+                                {% else %}
+                                    <span style="font-size:150%;">&star;</span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </td>
+                    <td>
+                        <b>{{ node.field_creativity.fieldDefinition.label }}</b><br>
+                        {% set rating = node.field_creativity.value %}
+                        <div class="star-rating">
+                            {% for i in 1..5 %}
+                                {% if i <= {
+                                    'Poor': 1,
+                                    'Average': 2,
+                                    'Good': 3,
+                                    'Very Good': 4,
+                                    'Excellent': 5,
+                                }[rating] ?? 0 %}
+                                    <span style="color:#f5bd1f;font-size:150%;">&starf;</span>
+                                {% else %}
+                                    <span style="font-size:150%;">&star;</span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </td>
+                    <td>
+                        <b>{{ node.field_oral_communication.fieldDefinition.label }}</b><br>
+                        {% set rating = node.field_oral_communication.value %}
+                        <div class="star-rating">
+                            {% for i in 1..5 %}
+                                {% if i <= {
+                                    'Poor': 1,
+                                    'Average': 2,
+                                    'Good': 3,
+                                    'Very Good': 4,
+                                    'Excellent': 5,
+                                }[rating] ?? 0 %}
+                                    <span style="color:#f5bd1f;font-size:150%;">&starf;</span>
+                                {% else %}
+                                    <span style="font-size:150%;">&star;</span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>{{ node.field_specialized_knowledge.fieldDefinition.label }}</b><br>
+                        {% set rating = node.field_specialized_knowledge.value %}
+                        <div class="star-rating">
+                            {% for i in 1..5 %}
+                                {% if i <= {
+                                    'Poor': 1,
+                                    'Average': 2,
+                                    'Good': 3,
+                                    'Very Good': 4,
+                                    'Excellent': 5,
+                                }[rating] ?? 0 %}
+                                    <span style="color:#f5bd1f;font-size:150%;">&starf;</span>
+                                {% else %}
+                                    <span style="font-size:150%;">&star;</span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        {% if node.field_referee_report.entity.uri.value %}
+            <div class="pdf-embed h-100">
+                <iframe src="{{ file_url(node.field_referee_report.entity.uri.value) }}" class="h-100 w-100" style="min-height:700px"></iframe>
+            </div>
+        {% endif %}
+    </div>
+</article>

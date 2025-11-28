@@ -1,0 +1,23 @@
+uuid: 69fd345c-525e-490e-9ef8-617eb97642d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_total_score_for_the_candid
+    - node.type.interview_evaluation
+id: node.interview_evaluation.field_total_score_for_the_candid
+field_name: field_total_score_for_the_candid
+entity_type: node
+bundle: interview_evaluation
+label: 'Total Score for the candidate'
+description: '<b>This is the base + variable score </b>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

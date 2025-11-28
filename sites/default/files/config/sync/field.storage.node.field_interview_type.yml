@@ -1,0 +1,27 @@
+uuid: 63808e7e-3d6a-48a9-95ab-9fccf35f762d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_interview_type
+field_name: field_interview_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: interview1_interview1|Interview1
+      label: Interview1
+    -
+      value: interview2_interview2|Interview2
+      label: Interview2
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

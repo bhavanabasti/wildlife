@@ -1,0 +1,131 @@
+uuid: 603e0dc9-4922-4bc6-a913-6573986346d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.candidate_cv.field_e_e_application_ref_cv
+    - field.field.node.candidate_cv.field_e_e_candidate_name
+    - field.field.node.candidate_cv.field_e_e_category
+    - field.field.node.candidate_cv.field_e_e_refernce
+    - field.field.node.candidate_cv.field_upload_cast_certificate
+    - field.field.node.candidate_cv.field_upload_photo
+    - field.field.node.candidate_cv.field_upload_signature
+    - image.style.thumbnail
+    - node.type.candidate_cv
+  module:
+    - file
+    - image
+    - path
+id: node.candidate_cv.default
+targetEntityType: node
+bundle: candidate_cv
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_e_e_application_ref_cv:
+    type: file_generic
+    weight: 124
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_e_e_candidate_name:
+    type: string_textfield
+    weight: 123
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_e_e_category:
+    type: string_textfield
+    weight: 121
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_e_e_refernce:
+    type: entity_reference_autocomplete
+    weight: 122
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_upload_cast_certificate:
+    type: file_generic
+    weight: 125
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_upload_photo:
+    type: image_image
+    weight: 126
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_upload_signature:
+    type: image_image
+    weight: 127
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

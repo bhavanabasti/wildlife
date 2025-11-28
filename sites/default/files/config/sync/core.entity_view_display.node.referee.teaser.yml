@@ -1,0 +1,74 @@
+uuid: f3046177-6562-49d6-ad20-9a0474174580
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.referee.field_ability_to_work_in_a_team
+    - field.field.node.referee.field_additional_comments
+    - field.field.node.referee.field_any_other_general_remarks
+    - field.field.node.referee.field_are_you_recommending_more
+    - field.field.node.referee.field_basic_knowledge
+    - field.field.node.referee.field_candidate_how_long
+    - field.field.node.referee.field_candidate_info_ref
+    - field.field.node.referee.field_collaboration_ability
+    - field.field.node.referee.field_contact_address
+    - field.field.node.referee.field_do_you_feel_that_his_her_g
+    - field.field.node.referee.field_experimental_skill
+    - field.field.node.referee.field_former_students
+    - field.field.node.referee.field_how_would_you_place_the_ap
+    - field.field.node.referee.field_if_not_please_comment
+    - field.field.node.referee.field_in_summary_how_do_you_reco
+    - field.field.node.referee.field_independence
+    - field.field.node.referee.field_mathematical_skill
+    - field.field.node.referee.field_maturity
+    - field.field.node.referee.field_oral_communication
+    - field.field.node.referee.field_overall_rating
+    - field.field.node.referee.field_recomendation
+    - field.field.node.referee.field_referee_report
+    - field.field.node.referee.field_specialized_knowledge
+    - field.field.node.referee.field_strongly_recommend
+    - field.field.node.referee.field_supervise
+    - field.field.node.referee.field_title_position
+    - field.field.node.referee.field_written_communication
+    - node.type.referee
+  module:
+    - user
+id: node.referee.teaser
+targetEntityType: node
+bundle: referee
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_ability_to_work_in_a_team: true
+  field_additional_comments: true
+  field_any_other_general_remarks: true
+  field_are_you_recommending_more: true
+  field_basic_knowledge: true
+  field_candidate_how_long: true
+  field_candidate_info_ref: true
+  field_collaboration_ability: true
+  field_contact_address: true
+  field_do_you_feel_that_his_her_g: true
+  field_experimental_skill: true
+  field_former_students: true
+  field_how_would_you_place_the_ap: true
+  field_if_not_please_comment: true
+  field_in_summary_how_do_you_reco: true
+  field_independence: true
+  field_mathematical_skill: true
+  field_maturity: true
+  field_oral_communication: true
+  field_overall_rating: true
+  field_recomendation: true
+  field_referee_report: true
+  field_specialized_knowledge: true
+  field_strongly_recommend: true
+  field_supervise: true
+  field_title_position: true
+  field_written_communication: true

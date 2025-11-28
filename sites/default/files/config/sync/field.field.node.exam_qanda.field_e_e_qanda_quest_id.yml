@@ -1,0 +1,19 @@
+uuid: 546dc84a-e611-4bc5-bb93-69ba06837c7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_e_qanda_quest_id
+    - node.type.exam_qanda
+id: node.exam_qanda.field_e_e_qanda_quest_id
+field_name: field_e_e_qanda_quest_id
+entity_type: node
+bundle: exam_qanda
+label: 'Question ID :'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

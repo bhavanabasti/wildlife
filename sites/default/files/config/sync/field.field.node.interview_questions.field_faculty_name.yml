@@ -1,0 +1,29 @@
+uuid: a304a74b-fcd4-41b9-b693-0c3798440fe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faculty_name
+    - node.type.interview_questions
+id: node.interview_questions.field_faculty_name
+field_name: field_faculty_name
+entity_type: node
+bundle: interview_questions
+label: 'Faculty Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference

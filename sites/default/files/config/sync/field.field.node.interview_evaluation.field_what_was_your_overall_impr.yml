@@ -1,0 +1,19 @@
+uuid: ef7d9e73-a868-45f5-ba89-370c5618254a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_was_your_overall_impr
+    - node.type.interview_evaluation
+id: node.interview_evaluation.field_what_was_your_overall_impr
+field_name: field_what_was_your_overall_impr
+entity_type: node
+bundle: interview_evaluation
+label: 'What was your overall impression of this candidate?'
+description: '<b>Provide a short summary of your interview with this candidate </b>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

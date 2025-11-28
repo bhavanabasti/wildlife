@@ -1,0 +1,27 @@
+uuid: 98d8fd6f-f889-4c64-ad29-b046f75b0508
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_do_you_feel_that_his_her_g
+field_name: field_do_you_feel_that_his_her_g
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: yes_yes|Yes
+      label: 'Yes'
+    -
+      value: 'no_no| No'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

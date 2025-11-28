@@ -1,0 +1,33 @@
+uuid: f2a9cb53-deaf-485e-862c-b510a34f3260
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_how_would_you_place_the_ap
+field_name: field_how_would_you_place_the_ap
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'top_5_top_5|Top 5%'
+      label: 'Top 5%'
+    -
+      value: 'top_10_top_10|Top 10%'
+      label: 'Top 10%'
+    -
+      value: 'top_20_top_20|Top 20%'
+      label: 'Top 20%'
+    -
+      value: 'bottom_20_bottom_20|Bottom 20%'
+      label: 'Bottom 20%'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

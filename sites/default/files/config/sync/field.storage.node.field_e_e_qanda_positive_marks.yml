@@ -1,0 +1,21 @@
+uuid: 004b62a6-78cb-4cf4-be1f-aadedbbb8701
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_e_e_qanda_positive_marks
+field_name: field_e_e_qanda_positive_marks
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

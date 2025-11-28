@@ -1,0 +1,19 @@
+uuid: a79ba792-f528-41c4-9e53-f4f722995edf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_e_qanda_ans
+    - node.type.exam_qanda
+id: node.exam_qanda.field_e_e_qanda_ans
+field_name: field_e_e_qanda_ans
+entity_type: node
+bundle: exam_qanda
+label: 'Anwser :'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

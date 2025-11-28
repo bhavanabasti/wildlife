@@ -1,0 +1,21 @@
+uuid: d324d795-0791-4a4b-8790-51ae18ef878e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interview_type
+    - node.type.interview_questions
+  module:
+    - options
+id: node.interview_questions.field_interview_type
+field_name: field_interview_type
+entity_type: node
+bundle: interview_questions
+label: 'Interview Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

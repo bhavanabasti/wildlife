@@ -1,0 +1,29 @@
+<div class="star-rating">
+  {% set rating = item.content|raw %}
+  <div>
+    {{ item.content|raw }}
+  </div>
+
+  {% if rating == 'Poor' %}
+    <span class="star">
+      &#9733;
+    </span>
+  {% elseif rating == 'Good' %}
+    <span class="star">
+      &#9733;
+    </span>
+    <span class="star">
+      &#9733;
+    </span>
+  {% elseif rating == 'Best' %}
+    <span class="star">
+      &#9733;
+    </span>
+    <span class="star">
+      &#9733;
+    </span>
+    <span class="star">
+      &#9733;
+    </span>
+  {% endif %}
+</div>

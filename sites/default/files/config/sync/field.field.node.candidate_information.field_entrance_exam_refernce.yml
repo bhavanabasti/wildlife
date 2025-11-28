@@ -1,0 +1,29 @@
+uuid: 078da379-0863-422a-8a60-0e4b7a627dd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entrance_exam_refernce
+    - node.type.application_and_entrance_exam
+    - node.type.candidate_information
+id: node.candidate_information.field_entrance_exam_refernce
+field_name: field_entrance_exam_refernce
+entity_type: node
+bundle: candidate_information
+label: 'Entrance exam refernce'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      application_and_entrance_exam: application_and_entrance_exam
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

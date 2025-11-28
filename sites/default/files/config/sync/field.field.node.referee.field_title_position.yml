@@ -1,0 +1,19 @@
+uuid: adbc2464-eb66-4892-b714-20664138341c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_position
+    - node.type.referee
+id: node.referee.field_title_position
+field_name: field_title_position
+entity_type: node
+bundle: referee
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

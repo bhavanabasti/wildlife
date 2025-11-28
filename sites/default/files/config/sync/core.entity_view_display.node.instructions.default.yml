@@ -1,0 +1,27 @@
+uuid: dbdf19b6-3d7f-4112-afc0-53c02c5a66cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.instructions.field_instructions_message
+    - node.type.instructions
+  module:
+    - user
+id: node.instructions.default
+targetEntityType: node
+bundle: instructions
+mode: default
+content:
+  field_instructions_message:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

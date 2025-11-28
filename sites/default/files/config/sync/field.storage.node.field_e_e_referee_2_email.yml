@@ -1,0 +1,18 @@
+uuid: 4041c5c5-c0db-457b-8bb0-3f957e4bd878
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_e_e_referee_2_email
+field_name: field_e_e_referee_2_email
+entity_type: node
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

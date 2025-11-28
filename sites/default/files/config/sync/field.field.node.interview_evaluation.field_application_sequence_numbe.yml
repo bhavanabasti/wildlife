@@ -1,0 +1,29 @@
+uuid: 8ec0ef07-7405-4ad2-947f-0bf354b1c2d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_application_sequence_numbe
+    - node.type.application_and_entrance_exam
+    - node.type.interview_evaluation
+id: node.interview_evaluation.field_application_sequence_numbe
+field_name: field_application_sequence_numbe
+entity_type: node
+bundle: interview_evaluation
+label: 'Application Sequence Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      application_and_entrance_exam: application_and_entrance_exam
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

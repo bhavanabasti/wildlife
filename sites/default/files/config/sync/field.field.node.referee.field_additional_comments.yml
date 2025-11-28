@@ -1,0 +1,19 @@
+uuid: 93818656-de70-4901-9959-dbbdaea83cc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_comments
+    - node.type.referee
+id: node.referee.field_additional_comments
+field_name: field_additional_comments
+entity_type: node
+bundle: referee
+label: 'We would welcome additional comments.We are interested in knowing potential of this candidate for an independent research career'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,21 @@
+uuid: dacaaa0d-ed37-4ad2-be72-e92ea29c0dcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_specialized_knowledge
+    - node.type.referee
+  module:
+    - options
+id: node.referee.field_specialized_knowledge
+field_name: field_specialized_knowledge
+entity_type: node
+bundle: referee
+label: 'Capacity for independent thinking'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

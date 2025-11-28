@@ -1,0 +1,21 @@
+uuid: 18dbae37-7d2c-4278-ac3a-fa977eb95c49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oral_communication
+    - node.type.referee
+  module:
+    - options
+id: node.referee.field_oral_communication
+field_name: field_oral_communication
+entity_type: node
+bundle: referee
+label: 'Interest in extracurricular activities e.g. mountaineering, communication, arts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: 51f13ec2-4f98-4456-8fac-85cd1c3712d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_independence
+    - node.type.referee
+  module:
+    - options
+id: node.referee.field_independence
+field_name: field_independence
+entity_type: node
+bundle: referee
+label: Independence
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

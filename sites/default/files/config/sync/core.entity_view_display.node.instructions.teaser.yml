@@ -1,0 +1,22 @@
+uuid: 49878abb-90a9-4119-be82-c3e155939424
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.instructions.field_instructions_message
+    - node.type.instructions
+  module:
+    - user
+id: node.instructions.teaser
+targetEntityType: node
+bundle: instructions
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_instructions_message: true

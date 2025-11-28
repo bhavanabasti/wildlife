@@ -1,0 +1,34 @@
+uuid: dd1ac90a-85e7-4815-a064-66f41c366d11
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.candidate_cv.field_e_e_application_ref_cv
+    - field.field.node.candidate_cv.field_e_e_candidate_name
+    - field.field.node.candidate_cv.field_e_e_category
+    - field.field.node.candidate_cv.field_e_e_refernce
+    - field.field.node.candidate_cv.field_upload_cast_certificate
+    - field.field.node.candidate_cv.field_upload_photo
+    - field.field.node.candidate_cv.field_upload_signature
+    - node.type.candidate_cv
+  module:
+    - user
+id: node.candidate_cv.teaser
+targetEntityType: node
+bundle: candidate_cv
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_e_e_application_ref_cv: true
+  field_e_e_candidate_name: true
+  field_e_e_category: true
+  field_e_e_refernce: true
+  field_upload_cast_certificate: true
+  field_upload_photo: true
+  field_upload_signature: true

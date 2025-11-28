@@ -1,0 +1,21 @@
+uuid: 092069bd-4efb-4937-9c65-ae9799c1210f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_strongly_recommend
+    - node.type.referee
+  module:
+    - options
+id: node.referee.field_strongly_recommend
+field_name: field_strongly_recommend
+entity_type: node
+bundle: referee
+label: 'In summary, how strongly would you recommend the applicant?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

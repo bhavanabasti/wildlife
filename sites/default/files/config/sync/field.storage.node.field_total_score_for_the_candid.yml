@@ -1,0 +1,20 @@
+uuid: 7d5b36f7-cd25-4e5b-8028-3a7df6e68b0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_total_score_for_the_candid
+field_name: field_total_score_for_the_candid
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

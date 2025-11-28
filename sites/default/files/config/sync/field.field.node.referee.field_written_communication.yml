@@ -1,0 +1,21 @@
+uuid: e4eeb868-8d87-4fdc-9c0c-a2edb63acd3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_written_communication
+    - node.type.referee
+  module:
+    - options
+id: node.referee.field_written_communication
+field_name: field_written_communication
+entity_type: node
+bundle: referee
+label: 'Written communication'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

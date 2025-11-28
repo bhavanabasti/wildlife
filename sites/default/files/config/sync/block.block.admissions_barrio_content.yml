@@ -1,0 +1,22 @@
+uuid: e71aa606-bdfa-4ae7-bb5a-14b9946f41cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - admissions_barrio
+_core:
+  default_config_hash: 1o0W13wt232YmsDYiRA5xtlFq0L2WNS7FmIVbBeuhIY
+id: admissions_barrio_content
+theme: admissions_barrio
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

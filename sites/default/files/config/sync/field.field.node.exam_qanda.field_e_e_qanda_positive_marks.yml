@@ -1,0 +1,19 @@
+uuid: 3b0e9ea1-da8e-4279-9d6e-3c983b0308a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_e_qanda_positive_marks
+    - node.type.exam_qanda
+id: node.exam_qanda.field_e_e_qanda_positive_marks
+field_name: field_e_e_qanda_positive_marks
+entity_type: node
+bundle: exam_qanda
+label: 'Positive Marks :'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

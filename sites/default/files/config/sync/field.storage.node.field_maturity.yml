@@ -1,0 +1,39 @@
+uuid: 9cfbdd88-763d-4738-8143-01a2e0ceff9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_maturity
+field_name: field_maturity
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'not_applicable_not_known|Not Applicable'
+      label: 'Not Known'
+    -
+      value: poor_poor|Poor
+      label: Poor
+    -
+      value: average_average|Average
+      label: Average
+    -
+      value: good_good|Good
+      label: Good
+    -
+      value: 'very_good_very_good|Very Good'
+      label: 'Very Good'
+    -
+      value: excellent_excellent|Excellent
+      label: Excellent
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: cf2e34d0-0591-469c-bf47-a4842a06387d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_former_students
+    - node.type.referee
+id: node.referee.field_former_students
+field_name: field_former_students
+entity_type: node
+bundle: referee
+label: 'If any of your former students are currently in graduate program at these Centres/Institutions, how does this candidate compare?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

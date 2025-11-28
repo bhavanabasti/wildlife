@@ -1,0 +1,32 @@
+uuid: 6b465407-ea32-4803-8cac-a049f4a84294
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.exam_qanda.field_e_e_qanda_ans
+    - field.field.node.exam_qanda.field_e_e_qanda_negative_marks
+    - field.field.node.exam_qanda.field_e_e_qanda_positive_marks
+    - field.field.node.exam_qanda.field_e_e_qanda_quest_id
+    - field.field.node.exam_qanda.field_e_e_qanda_question
+    - field.field.node.exam_qanda.field_e_e_qanda_section_id
+    - node.type.exam_qanda
+  module:
+    - user
+id: node.exam_qanda.teaser
+targetEntityType: node
+bundle: exam_qanda
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_e_e_qanda_ans: true
+  field_e_e_qanda_negative_marks: true
+  field_e_e_qanda_positive_marks: true
+  field_e_e_qanda_quest_id: true
+  field_e_e_qanda_question: true
+  field_e_e_qanda_section_id: true

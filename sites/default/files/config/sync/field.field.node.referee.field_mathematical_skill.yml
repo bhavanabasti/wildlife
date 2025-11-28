@@ -1,0 +1,21 @@
+uuid: 46badd2a-9bf1-4173-bfca-07ef55352b17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mathematical_skill
+    - node.type.referee
+  module:
+    - options
+id: node.referee.field_mathematical_skill
+field_name: field_mathematical_skill
+entity_type: node
+bundle: referee
+label: 'Communication skills – oral'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

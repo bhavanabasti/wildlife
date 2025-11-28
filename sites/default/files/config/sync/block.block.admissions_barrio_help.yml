@@ -1,0 +1,22 @@
+uuid: 41ab6940-3bd1-475e-991b-8551d50a46be
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - admissions_barrio
+_core:
+  default_config_hash: S0Y16qIQfKiOEzWlddOGk3u_BKwAruAheA8VVFfGbLc
+id: admissions_barrio_help
+theme: admissions_barrio
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

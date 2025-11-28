@@ -1,0 +1,25 @@
+uuid: 5da16572-8554-4544-b983-f6ceb62d0805
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ee1d1eac-ba2e-44cb-a055-122f42070cbd'
+  module:
+    - block_content
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_admissionsfooter
+theme: bootstrap_barrio_subtheme
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:ee1d1eac-ba2e-44cb-a055-122f42070cbd'
+settings:
+  id: 'block_content:ee1d1eac-ba2e-44cb-a055-122f42070cbd'
+  label: 'Admissions Footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

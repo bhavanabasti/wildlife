@@ -1,0 +1,40 @@
+uuid: 988c4b57-b257-4455-a370-66a0e23b3d27
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.candidate_information.field_e_candidate_name
+    - field.field.node.candidate_information.field_e_e_referee_1_email
+    - field.field.node.candidate_information.field_e_e_referee_1_name
+    - field.field.node.candidate_information.field_e_e_referee_2_email
+    - field.field.node.candidate_information.field_e_e_referee_2_name
+    - field.field.node.candidate_information.field_entrance_exam_refernce
+    - field.field.node.candidate_information.field_ref1_node_ref
+    - field.field.node.candidate_information.field_ref1_session
+    - field.field.node.candidate_information.field_ref2_node_ref
+    - field.field.node.candidate_information.field_ref2_session
+    - node.type.candidate_information
+  module:
+    - user
+id: node.candidate_information.teaser
+targetEntityType: node
+bundle: candidate_information
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_e_candidate_name: true
+  field_e_e_referee_1_email: true
+  field_e_e_referee_1_name: true
+  field_e_e_referee_2_email: true
+  field_e_e_referee_2_name: true
+  field_entrance_exam_refernce: true
+  field_ref1_node_ref: true
+  field_ref1_session: true
+  field_ref2_node_ref: true
+  field_ref2_session: true

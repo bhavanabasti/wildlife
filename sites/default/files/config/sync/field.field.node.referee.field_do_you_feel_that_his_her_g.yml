@@ -1,0 +1,21 @@
+uuid: da09f900-9156-43ca-b2f7-823d79707f2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_do_you_feel_that_his_her_g
+    - node.type.referee
+  module:
+    - options
+id: node.referee.field_do_you_feel_that_his_her_g
+field_name: field_do_you_feel_that_his_her_g
+entity_type: node
+bundle: referee
+label: 'Do you feel that his/her grades (or marks) represent his/her academic ability? If not, please comment.'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

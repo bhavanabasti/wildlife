@@ -1,0 +1,19 @@
+uuid: 23ea87b8-45b5-49b6-8bf0-df1fd02f34fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_supervise
+    - node.type.referee
+id: node.referee.field_supervise
+field_name: field_supervise
+entity_type: node
+bundle: referee
+label: 'Did you supervise this candidate for a research project? If so, briefly describe the duration, scope and outcomes of the project'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

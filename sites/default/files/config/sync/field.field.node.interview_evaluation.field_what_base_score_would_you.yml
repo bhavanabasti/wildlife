@@ -1,0 +1,21 @@
+uuid: 73e6e1e6-dbd3-41f9-b4ab-bb224489479f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_base_score_would_you
+    - node.type.interview_evaluation
+  module:
+    - options
+id: node.interview_evaluation.field_what_base_score_would_you
+field_name: field_what_base_score_would_you
+entity_type: node
+bundle: interview_evaluation
+label: 'What base score would you give the candidate'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

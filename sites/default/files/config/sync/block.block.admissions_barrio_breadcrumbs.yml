@@ -1,0 +1,22 @@
+uuid: 97610cec-4f48-4bbe-97aa-78fadda5d909
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - admissions_barrio
+_core:
+  default_config_hash: VShtwe72J2j41BJzApoNbs8l554EpngM5RTObxM7yiw
+id: admissions_barrio_breadcrumbs
+theme: admissions_barrio
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

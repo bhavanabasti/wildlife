@@ -1,0 +1,20 @@
+uuid: 7b1fe31c-7bd3-4823-989f-5c2deaab3dc7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - admissions_barrio
+_core:
+  default_config_hash: qYppfxaWSy6BwGNKdMch1PeUA24PlRTt39jQft6A6Kg
+id: admissions_barrio_page_title
+theme: admissions_barrio
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

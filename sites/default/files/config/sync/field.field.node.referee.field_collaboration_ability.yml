@@ -1,0 +1,21 @@
+uuid: 574726b0-a1f1-42bc-b0f7-75e745aa46f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_collaboration_ability
+    - node.type.referee
+  module:
+    - options
+id: node.referee.field_collaboration_ability
+field_name: field_collaboration_ability
+entity_type: node
+bundle: referee
+label: 'Resourcefulness in challenging situations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

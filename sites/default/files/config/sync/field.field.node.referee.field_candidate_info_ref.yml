@@ -1,0 +1,29 @@
+uuid: 39b1d1d1-ad7d-431b-8184-b6d3528b7e47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_candidate_info_ref
+    - node.type.candidate_information
+    - node.type.referee
+id: node.referee.field_candidate_info_ref
+field_name: field_candidate_info_ref
+entity_type: node
+bundle: referee
+label: 'Candidate Info Ref'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      candidate_information: candidate_information
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

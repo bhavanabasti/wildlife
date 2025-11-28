@@ -1,0 +1,18 @@
+uuid: ed18db54-c784-40ab-8825-8dfccb546590
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Candidate CV'
+type: candidate_cv
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

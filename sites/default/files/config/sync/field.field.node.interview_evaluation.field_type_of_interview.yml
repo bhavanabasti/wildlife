@@ -1,0 +1,21 @@
+uuid: 1e639694-d1d5-4955-b0b7-a29b197006f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_of_interview
+    - node.type.interview_evaluation
+  module:
+    - options
+id: node.interview_evaluation.field_type_of_interview
+field_name: field_type_of_interview
+entity_type: node
+bundle: interview_evaluation
+label: 'Type of Interview '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,33 @@
+uuid: da546368-c12f-4622-aeeb-2aedfe71293e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_in_summary_how_do_you_reco
+field_name: field_in_summary_how_do_you_reco
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'very_strongly_very_strongly|Very strongly'
+      label: 'Very strongly'
+    -
+      value: strongly_strongly|Strongly
+      label: Strongly
+    -
+      value: average_average|Average
+      label: Average
+    -
+      value: 'with_some_reservation_with_some_reservation|With some reservation'
+      label: 'With some reservation'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

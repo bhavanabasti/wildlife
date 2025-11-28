@@ -1,0 +1,19 @@
+uuid: 470171d3-a106-4628-b2e2-d71267d0cb64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instructions_message
+    - node.type.instructions
+id: node.instructions.field_instructions_message
+field_name: field_instructions_message
+entity_type: node
+bundle: instructions
+label: Message
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

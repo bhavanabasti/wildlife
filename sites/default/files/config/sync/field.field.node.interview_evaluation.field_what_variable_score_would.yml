@@ -1,0 +1,23 @@
+uuid: f22433ac-1cdf-417b-b87b-c5acc03864aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_variable_score_would
+    - node.type.interview_evaluation
+id: node.interview_evaluation.field_what_variable_score_would
+field_name: field_what_variable_score_would
+entity_type: node
+bundle: interview_evaluation
+label: 'What variable score would you like to add to the candidates score?'
+description: 'Variable score can be negative or positive'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

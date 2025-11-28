@@ -1,0 +1,27 @@
+uuid: 1363fa58-85e5-4a21-9e56-facc3f27ecce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_referee_report
+    - node.type.referee
+  module:
+    - file
+id: node.referee.field_referee_report
+field_name: field_referee_report
+entity_type: node
+bundle: referee
+label: 'Upload Referee report'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

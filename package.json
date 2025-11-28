@@ -1,0 +1,23 @@
+{
+  "name": "gs26_wl",
+  "version": "1.0.0",
+  "description": "<img alt=\"Drupal Logo\" src=\"https://www.drupal.org/files/Wordmark_blue_RGB.png\" height=\"60px\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhavanabasti/GS26_WL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhavanabasti/GS26_WL/issues"
+  },
+  "homepage": "https://github.com/bhavanabasti/GS26_WL#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}

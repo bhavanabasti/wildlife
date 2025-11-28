@@ -1,0 +1,280 @@
+uuid: 88a6be31-4afc-4f59-8d71-e1e80b2220c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.referee.field_ability_to_work_in_a_team
+    - field.field.node.referee.field_additional_comments
+    - field.field.node.referee.field_any_other_general_remarks
+    - field.field.node.referee.field_are_you_recommending_more
+    - field.field.node.referee.field_basic_knowledge
+    - field.field.node.referee.field_candidate_how_long
+    - field.field.node.referee.field_candidate_info_ref
+    - field.field.node.referee.field_collaboration_ability
+    - field.field.node.referee.field_contact_address
+    - field.field.node.referee.field_do_you_feel_that_his_her_g
+    - field.field.node.referee.field_experimental_skill
+    - field.field.node.referee.field_former_students
+    - field.field.node.referee.field_how_would_you_place_the_ap
+    - field.field.node.referee.field_if_not_please_comment
+    - field.field.node.referee.field_in_summary_how_do_you_reco
+    - field.field.node.referee.field_independence
+    - field.field.node.referee.field_mathematical_skill
+    - field.field.node.referee.field_maturity
+    - field.field.node.referee.field_oral_communication
+    - field.field.node.referee.field_overall_rating
+    - field.field.node.referee.field_recomendation
+    - field.field.node.referee.field_referee_report
+    - field.field.node.referee.field_specialized_knowledge
+    - field.field.node.referee.field_strongly_recommend
+    - field.field.node.referee.field_supervise
+    - field.field.node.referee.field_title_position
+    - field.field.node.referee.field_written_communication
+    - node.type.referee
+  module:
+    - file
+    - path
+id: node.referee.default
+targetEntityType: node
+bundle: referee
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ability_to_work_in_a_team:
+    type: options_select
+    weight: 124
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_additional_comments:
+    type: string_textarea
+    weight: 148
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_any_other_general_remarks:
+    type: string_textarea
+    weight: 127
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_are_you_recommending_more:
+    type: string_textarea
+    weight: 128
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_basic_knowledge:
+    type: options_select
+    weight: 125
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_candidate_how_long:
+    type: string_textarea
+    weight: 137
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_candidate_info_ref:
+    type: entity_reference_autocomplete
+    weight: 130
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_collaboration_ability:
+    type: options_select
+    weight: 146
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contact_address:
+    type: string_textarea
+    weight: 134
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_do_you_feel_that_his_her_g:
+    type: options_select
+    weight: 136
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_experimental_skill:
+    type: options_select
+    weight: 133
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_former_students:
+    type: string_textarea
+    weight: 139
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_how_would_you_place_the_ap:
+    type: options_select
+    weight: 138
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_if_not_please_comment:
+    type: string_textarea
+    weight: 140
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_in_summary_how_do_you_reco:
+    type: options_select
+    weight: 142
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_independence:
+    type: options_select
+    weight: 141
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_mathematical_skill:
+    type: options_select
+    weight: 132
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_maturity:
+    type: options_select
+    weight: 123
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_oral_communication:
+    type: options_select
+    weight: 144
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_overall_rating:
+    type: options_select
+    weight: 126
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_recomendation:
+    type: string_textarea
+    weight: 129
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_referee_report:
+    type: file_generic
+    weight: 147
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_specialized_knowledge:
+    type: options_select
+    weight: 131
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_strongly_recommend:
+    type: options_select
+    weight: 143
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_supervise:
+    type: string_textarea
+    weight: 135
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_position:
+    type: string_textfield
+    weight: 145
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_written_communication:
+    type: options_select
+    weight: 149
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

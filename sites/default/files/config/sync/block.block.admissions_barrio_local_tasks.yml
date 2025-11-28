@@ -1,0 +1,22 @@
+uuid: 688dacde-b24e-4bba-8c29-574f856617bb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - admissions_barrio
+_core:
+  default_config_hash: yX9o6NcntZnXRDfbJoHY1pJwuXlumW44m5AMs347NN4
+id: admissions_barrio_local_tasks
+theme: admissions_barrio
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,178 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+/*custom*/
+.download-links a {
+  margin-right: 70px;
+}
+
+.alert-wrapper {
+  position:relative;
+}
+header #navbar-main a {
+  color:#ffff;
+}
+.site-name {
+  font-size:25px;
+}
+.user-login .tabs {
+   display:none;
+}
+.page-user-login .title {
+   text-align:center;
+}
+.block-page-title-block .title {
+  font-size:1.4rem;
+}
+table tr th {
+  background: #007bff;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.01);
+}
+table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.01);
+}
+.site-footer .content {
+  color:#000;
+}
+.site-footer .content a {
+  color:#0071b3;
+}
+.site-footer .content a:hover,
+.site-footer .content a:focus {
+  color:#008ee2;
+}
+input[type="checkbox"] {
+    z-index: 1;
+    opacity: initial;
+}
+.sidebar .nav {
+   display:block;
+}
+.vbo-view-form {
+   margin-right:20px;
+}
+.vbo-view-form .form-actions {
+   padding-left:15px;
+}
+.vbo-view-form .form-actions .btn {
+   margin-bottom: 10px;
+}
+.view .views-form {
+   max-width:100%;
+}
+.block-entrance-exam-node-view-block nav > .nav.nav-tabs,
+.block-node-view-block nav > .nav.nav-tabs{
+
+    border: none;
+    color:#fff;
+    background:#055a8e;
+    border-radius:0;
+
+}
+.block-entrance-exam-node-view-block nav > div a.nav-item.nav-link,
+.block-entrance-exam-node-view-block nav > div a.nav-item.nav-link.active,
+.block-node-view-block nav > div a.nav-item.nav-link,
+.block-node-view-block nav > div a.nav-item.nav-link.active
+{
+  border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background:#055a8e;
+    border-radius:0;
+}
+
+.block-entrance-exam-node-view-block .tab-content,
+.block-node-view-block .tab-content{
+  background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-bottom:5px solid #055a8e;
+    padding:30px 25px;
+}
+
+.block-entrance-exam-node-view-block nav > div a.nav-item.nav-link:hover,
+.block-entrance-exam-node-view-block nav > div a.nav-item.nav-link:focus,
+.block-node-view-block nav > div a.nav-item.nav-link:hover,
+.block-node-view-block nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    background: #5c96c5;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+/*#sidebar_first
+{
+max-width: 25%
+}*/
+.form-row fieldset
+{
+max-width: 220px!important;
+}
+@media only screen and (min-width: 800px) {
+#sidebar_first
+{
+max-width: 25%;
+}
+}
+@media only screen and (min-width: 280px) and (max-width: 567px){
+.d-inline-block{
+display: block!important;
+}
+
+#vbo-action-form-wrapper details{display: none;}}
+#vbo-action-form-wrapper .js-form-type-checkbox{display: none;}
+#vbo-action-form-wrapper summary{display: none;}
+.path-node #node-referee-form{margin-left: 5%;}
+.path-node #block-admissions-barrio-page-title {margin-left: 0%;}
+
+.star-rating {
+  display: inline-block;
+}
+
+.star {
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+body .form-check {
+  display: inline-block;
+  margin-right: 30px;
+}
+/* body .col-md-6 {
+  flex: 0 0 100%;
+  max-width: 100%;
+} */
+
+body .mb-3, .my-3 {
+  margin-bottom: 3rem!important;
+}
+
+body .container {
+  max-width: 100%;
+}
+
+#sidebar_first {
+  max-width: 15%;
+}
+
+div#block-admissions-barrio-entranceexamnodeviewblock {
+  width: 100%;
+}
+
+.form-required::after {
+  content: '*';
+  vertical-align: super;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 7px 7px;
+  width: 7px;
+  height: 7px;
+  margin: 0 0.3em;
+}
+
+p.centered {
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+uuid: 946ed5f6-d34b-4475-baf8-c2f5b0ff2805
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.interview_evaluation.field_any_other_information_if_y
+    - field.field.node.interview_evaluation.field_application_sequence_numbe
+    - field.field.node.interview_evaluation.field_candidate_name
+    - field.field.node.interview_evaluation.field_name_panel_members_who_are
+    - field.field.node.interview_evaluation.field_panel_number
+    - field.field.node.interview_evaluation.field_suggest_a_r2_panel_for_the
+    - field.field.node.interview_evaluation.field_total_score_for_the_candid
+    - field.field.node.interview_evaluation.field_type_of_interview
+    - field.field.node.interview_evaluation.field_what_base_score_would_you
+    - field.field.node.interview_evaluation.field_what_variable_score_would
+    - field.field.node.interview_evaluation.field_what_was_your_overall_impr
+    - field.field.node.interview_evaluation.field_why_are_you_awarding_this
+    - node.type.interview_evaluation
+  module:
+    - user
+id: node.interview_evaluation.teaser
+targetEntityType: node
+bundle: interview_evaluation
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_any_other_information_if_y: true
+  field_application_sequence_numbe: true
+  field_candidate_name: true
+  field_name_panel_members_who_are: true
+  field_panel_number: true
+  field_suggest_a_r2_panel_for_the: true
+  field_total_score_for_the_candid: true
+  field_type_of_interview: true
+  field_what_base_score_would_you: true
+  field_what_variable_score_would: true
+  field_what_was_your_overall_impr: true
+  field_why_are_you_awarding_this: true

@@ -1,0 +1,19 @@
+uuid: d5c40395-befb-468e-a9ba-24613f2e36cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_are_you_recommending_more
+    - node.type.referee
+id: node.referee.field_are_you_recommending_more
+field_name: field_are_you_recommending_more
+entity_type: node
+bundle: referee
+label: 'Are you recommending more than one candidate to M.Sc. Wildlife Biology and Conservation at NCBS? If so, please rank them in orde'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

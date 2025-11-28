@@ -1,0 +1,119 @@
+uuid: 1fb20a3d-7e01-4c71-a35a-332752f2c656
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.exam_qanda.field_e_e_qanda_ans
+    - field.field.node.exam_qanda.field_e_e_qanda_negative_marks
+    - field.field.node.exam_qanda.field_e_e_qanda_positive_marks
+    - field.field.node.exam_qanda.field_e_e_qanda_quest_id
+    - field.field.node.exam_qanda.field_e_e_qanda_question
+    - field.field.node.exam_qanda.field_e_e_qanda_section_id
+    - node.type.exam_qanda
+  module:
+    - path
+id: node.exam_qanda.default
+targetEntityType: node
+bundle: exam_qanda
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_e_e_qanda_ans:
+    type: string_textfield
+    weight: 121
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_e_e_qanda_negative_marks:
+    type: string_textfield
+    weight: 122
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_e_e_qanda_positive_marks:
+    type: string_textfield
+    weight: 123
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_e_e_qanda_quest_id:
+    type: string_textfield
+    weight: 125
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_e_e_qanda_question:
+    type: string_textfield
+    weight: 124
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_e_e_qanda_section_id:
+    type: string_textfield
+    weight: 126
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

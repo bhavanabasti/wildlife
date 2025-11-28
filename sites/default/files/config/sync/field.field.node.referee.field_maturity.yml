@@ -1,0 +1,21 @@
+uuid: 60f28462-cb63-4a2b-ac5e-f0cc72f96326
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_maturity
+    - node.type.referee
+  module:
+    - options
+id: node.referee.field_maturity
+field_name: field_maturity
+entity_type: node
+bundle: referee
+label: 'Ability to conduct field research'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,63 @@
+uuid: ad57f395-db66-4e60-8552-6440a96bdbfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.interview_questions.field_app_seq_no
+    - field.field.node.interview_questions.field_e_exam_candidate_name
+    - field.field.node.interview_questions.field_faculty_name
+    - field.field.node.interview_questions.field_interview_type
+    - field.field.node.interview_questions.field_what_did_you_ask_the_candi
+    - node.type.interview_questions
+  module:
+    - options
+    - user
+id: node.interview_questions.default
+targetEntityType: node
+bundle: interview_questions
+mode: default
+content:
+  field_app_seq_no:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_e_exam_candidate_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_faculty_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_interview_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_what_did_you_ask_the_candi:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

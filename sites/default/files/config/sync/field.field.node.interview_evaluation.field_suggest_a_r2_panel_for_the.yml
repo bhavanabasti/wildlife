@@ -1,0 +1,21 @@
+uuid: 9fa8a028-3814-44d2-aba4-31d3d55763ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_suggest_a_r2_panel_for_the
+    - node.type.interview_evaluation
+  module:
+    - options
+id: node.interview_evaluation.field_suggest_a_r2_panel_for_the
+field_name: field_suggest_a_r2_panel_for_the
+entity_type: node
+bundle: interview_evaluation
+label: 'Suggest a R2 panel for the candidate'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

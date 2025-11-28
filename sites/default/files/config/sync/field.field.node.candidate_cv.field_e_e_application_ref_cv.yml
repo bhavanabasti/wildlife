@@ -1,0 +1,27 @@
+uuid: 30b8ad4e-aa7d-402c-b778-1ea7d336023a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_e_application_ref_cv
+    - node.type.candidate_cv
+  module:
+    - file
+id: node.candidate_cv.field_e_e_application_ref_cv
+field_name: field_e_e_application_ref_cv
+entity_type: node
+bundle: candidate_cv
+label: 'Upload Application'
+description: '<p><a href="https://172.16.218.68/GS26_WL/sites/default/files/Instructions/NCBS Application sample MSC.docx"><strong>Please click here to Download Application Form</strong></a></p>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

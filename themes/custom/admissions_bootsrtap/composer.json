@@ -1,0 +1,10 @@
+{
+    "name": "drupal/admissions_bootsrtap",
+    "type": "drupal-theme",
+    "description": "SASS subtheme for Barrio Theme.",
+    "homepage": "http://drupal.org/project/admissions_bootsrtap",
+    "license": "GPL-2.0+",
+    "require": {
+        "drupal/bootstrap_barrio": ">=4.23.0"
+    }
+}

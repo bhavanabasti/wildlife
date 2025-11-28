@@ -1,0 +1,19 @@
+uuid: cec0d22d-af52-4343-b2c9-b32bfe768bea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_if_not_please_comment
+    - node.type.referee
+id: node.referee.field_if_not_please_comment
+field_name: field_if_not_please_comment
+entity_type: node
+bundle: referee
+label: 'If not, please comment.'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

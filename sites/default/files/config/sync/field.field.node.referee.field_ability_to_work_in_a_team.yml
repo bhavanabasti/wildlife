@@ -1,0 +1,21 @@
+uuid: a522899a-41e1-481c-81f8-0c9d3eb9bca9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ability_to_work_in_a_team
+    - node.type.referee
+  module:
+    - options
+id: node.referee.field_ability_to_work_in_a_team
+field_name: field_ability_to_work_in_a_team
+entity_type: node
+bundle: referee
+label: 'Ability to work in a team'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
